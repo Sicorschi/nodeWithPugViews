@@ -22,7 +22,7 @@ app.use('/api/roles', rolesRoutes);
 
 // Init the server:
 app.listen(port, () => {
-    console.log(`Nodejs server running on port ${port}`);
+    console.log(`Server running on port ${port}`);
     sequelize.sync({ force: true }).then(() => {
         console.log(`Connected to the database ${database.database}`);
     }).catch((err) => {
